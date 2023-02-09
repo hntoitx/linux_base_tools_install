@@ -14,6 +14,10 @@ sudo apt install npm -y
 sudo apt install lua5.4 -y
 sudo npm  install n -g
 sudo apt-get install powerline -y
+sudo apt install silversearcher-ag -y
+sudo apt install fdclone -y
+
+
 
 echo "安装nvim 插件"
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
