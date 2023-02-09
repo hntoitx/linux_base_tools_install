@@ -13,7 +13,7 @@ Plug 'pechorin/any-jump.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }       
 Plug 'ggandor/leap.nvim'
 Plug 'dracula/vim', { 'name': 'dracula' }
 Plug 'preservim/tagbar'
@@ -48,7 +48,6 @@ set fencs=utf-8,gbk
 set nu
 syntax enable
 map <F3> :NERDTreeToggle<CR>
-nmap tt :FloatermNew<CR>
 "nmap tt :term<CR>
 imap jk <ESC>
 set laststatus=2  "永远显示状态栏
@@ -79,7 +78,7 @@ let g:NERDDefaultAlign = 'left'
 let g:NERDAltDelims_java = 1
 
 " Add your own custom formats or override the defaults
-"let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } 
+"let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' }
 
 " Allow commenting and inverting empty lines (useful when commenting a region)
 let g:NERDCommentEmptyLines = 1
@@ -87,12 +86,12 @@ let g:NERDCommentEmptyLines = 1
 " Enable trimming of trailing whitespace when uncommenting
 let g:NERDTrimTrailingWhitespace = 1
 
-" Enable NERDCommenterToggle to check all selected lines is commented or not 
+" Enable NERDCommenterToggle to check all selected lines is commented or not
 let g:NERDToggleCheckAllLines = 1
-" 设置字体 
+" 设置字体
 set guifont=Powerline_Consolas:h14:cANSI
 " 设置中文提示
-"language messages zh_CN.utf-8 
+"language messages zh_CN.utf-8
 " 设置中文帮助
 set helplang=cn
 colorscheme dracula
@@ -168,14 +167,15 @@ let g:any_jump_disable_default_keybindings = 1
 
  nnoremap <leader>f :Files<CR>
 
+nmap <leader>t :FloatermNew<CR>
  " Find files using Telescope command-line sugar.
- 
+
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
- 
+
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
- 
+
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
- 
+
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>01~
 
 "lua require('leap').add_default_mappings()
