@@ -32,7 +32,6 @@ echo "配置zsh"
 mkdir -p ~/.config
 pushd ~/.config
 git clone https://github.com/hntoitx/omz
-mkdir -p ~/.config/omz/cache
 echo "source ~/.config/omz/omz.zsh" >> ~/.zshrc
 popd
 
