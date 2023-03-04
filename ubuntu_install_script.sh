@@ -16,6 +16,7 @@ sudo npm  install n -g
 sudo apt-get install powerline -y
 sudo apt install silversearcher-ag -y
 sudo apt install fdclone -y
+sudo apt-get install ripgrep
 
 
 
